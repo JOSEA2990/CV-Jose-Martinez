@@ -217,3 +217,23 @@ body {
       text-decoration: none;
       font-weight: bold;
     }
+
+    button{
+    box-sizing: border-box;
+    padding: 0 20px;
+    width: 50%;
+    height: 20px;
+    font-family: sans-serif;
+    }
+
+    .boton{
+    box-sizing: border-box;
+    padding: 0;
+    width: 50%;
+    height: 50%;
+    font-family: sans-serif;
+    font-size: 3vh;
+    box-shadow: 0px 0px 70px rgb(167, 138, 157);
+    border-radius: 10px;
+    border-color: rgb(0, 0, 0);
+    }
