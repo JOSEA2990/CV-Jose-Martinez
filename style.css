@@ -258,36 +258,40 @@
     margin:5px;
     }
 
-    .tarjeta {
-    position: relative;
-    cursor: pointer;
-    }
+.tarjeta {
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+}
 
-    .texto-visible,
-    .texto-hover {
-    transition: opacity 0.3s ease;
-    }
+.contenido {
+  display: grid;
+}
 
-/* Mostrar solo el texto inicial */
-    .texto-visible {
-    opacity: 1;
-    }
+.texto-visible,
+.texto-hover {
+  grid-area: 1 / 1;
+  transition: opacity 0.3s ease;
+}
 
-    .texto-hover {
-    margin: 0px;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 90%;
-    text-align:left;
-    }
+.texto-visible {
+  opacity: 1;
+  z-index: 1;
+}
 
-   /* Al pasar el mouse, oculta uno y muestra el otro */
-    .tarjeta:hover .texto-visible {
-    opacity: 0;
-    }
+.texto-hover {
+  opacity: 0;
+  z-index: 0;
+  text-align:left;
+}
 
-    .tarjeta:hover .texto-hover {
-    opacity: 1;
-    }
+/* Hover: cambiar opacidades */
+.tarjeta:hover .texto-visible {
+  opacity: 0;
+  z-index: 0;
+}
+
+.tarjeta:hover .texto-hover {
+  opacity: 1;
+  z-index: 1;
+}
