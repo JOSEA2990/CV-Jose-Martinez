@@ -30,6 +30,9 @@
     p{
       font-size: 0.9rem;
     }
+    ol{
+      margin-top: 4px;
+    }
     li{
       margin: 2px;
       margin-left: 5px;
@@ -228,6 +231,7 @@
       border-left: 0px #1976d2;
     }
 
+      /* mueve la línea completamente a la derecha */
     footer {
       text-align: center;
       padding: 2rem;
@@ -252,6 +256,7 @@
       font-weight: bold;
     }
 
+      /* mueve la línea completamente a la derecha */
     button{
     padding: 10px;
     width: 50%;
@@ -286,10 +291,11 @@
     margin:5px;
     }
 
+      /* mueve la línea completamente a la derecha */
 .tarjeta {
   cursor: pointer;
   display: inline-block;
-  width: 100%;
+  width: 90%;
 }
 
 .contenido {
